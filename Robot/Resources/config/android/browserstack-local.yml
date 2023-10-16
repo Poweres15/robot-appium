@@ -1,0 +1,17 @@
+userName: ${USER_NAME}
+accessKey: ${ACCESSKEY}
+framework: robot
+app: Robot/Resources/app/android/ColorNote.apk
+platforms:
+  - platformName: android
+    deviceName: Samsung Galaxy S22 Ultra
+    platformVersion: 12.0
+parallelsPerPlatform: 1
+browserstackLocal: true
+browserStackLocalOptions:
+  forceLocal: true
+buildName: BrowserStack Demo Local
+projectName: BrowserStack Sample
+buildIdentifier: //6b43e5edfa47aa0bc3233c8c6cbf154706cd408c
+debug: true
+networkLogs: true

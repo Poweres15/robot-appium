@@ -1,0 +1,8 @@
+pabot_results/*
+*.sh
+.venv
+.pabot*
+*.log
+log.html
+output.xml
+report.html
