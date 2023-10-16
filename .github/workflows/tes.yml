@@ -27,7 +27,7 @@ jobs:
       - name: Install pip dependencies
         run: |
           pip install --upgrade pip
-          pip install -r requirement.txt
+          pip install -r requirements.txt
       - name: Run Test
         env:
           USER_NAME: ${{secrets.USER_NAME}}
