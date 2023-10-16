@@ -14,18 +14,18 @@ jobs:
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content
 
-      # - name: setup python
-      #   uses: actions/setup-python@v4
-      #   with:
-      #     python-version: "3.9.10" # install the python version needed
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11" # install the python version needed
 
       - name: Install pip dependencies
         run: |
 
           # pip install --upgrade pip
           # pip install wheel setuptools pip --upgrade
-          pip3 install wheel setuptools pip --upgrade
-          pip3 install -r requirements.txt
+          # pip3 install wheel setuptools pip --upgrade
+          python3 -m pip install -r requirements.txt
       - name: Run Test
         env:
           USER_NAME: ${{secrets.USER_NAME}}
