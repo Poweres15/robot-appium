@@ -22,10 +22,10 @@ jobs:
       - name: Install pip dependencies
         run: |
 
-          pip install --upgrade pip
-          pip install wheel setuptools pip --upgrade
-          # pip install pip==21.3.1
-          pip install -r requirements.txt
+          # pip install --upgrade pip
+          # pip install wheel setuptools pip --upgrade
+          pip3 install wheel setuptools pip --upgrade
+          pip3 install -r requirements.txt
       - name: Run Test
         env:
           USER_NAME: ${{secrets.USER_NAME}}
