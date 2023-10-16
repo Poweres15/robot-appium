@@ -14,10 +14,10 @@ jobs:
       - name: checkout repo content
         uses: actions/checkout@v2 # checkout the repository content
 
-      - name: setup python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.9.10" # install the python version needed
+      # - name: setup python
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: "3.9.10" # install the python version needed
 
       - name: Install pip dependencies
         run: |
